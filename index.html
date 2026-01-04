@@ -1,8 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Website</title>
+    <title>Experiment No 14 - Responsive Web Design</title>
+
+    <!-- Viewport Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS -->
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav {
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    padding: 10px;
+}
+
+.box {
+    flex: 1;
+    margin: 5px;
+    padding: 20px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
+</style>
 </head>
+
 <body>
 <header>
 <!--Name-->
@@ -12,19 +68,33 @@ WAPHARE SHREYA
 IT1263
 <br>
 </header>
-<h1>Welcome to My Website</h1>
-<p>This website is hosted using GitHub Pages.</p>
-<h3>About</h3>
-<p>This website is created by using HTML.</p>
-<h3>Contact</h3>
-<p>Email:shreya@gmail.com</p>
+
+
+    
+        <h1>Responsive Web Design</h1>
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="container">
+        <div class="box">Content Box 1</div>
+        <div class="box">Content Box 2</div>
+        <div class="box">Content Box 3</div>
+    </section>
+
+    
+        <p>©Responsive Web Design Demo</p>
+    
 <footer>
 <!--Name-->
 WAPHARE SHREYA
 <br>
-<!--ROLL NO-->
+<!--Roll No-->
 IT1263
-<br>
 </footer>
+
 </body>
-</html>ss
+</html>
